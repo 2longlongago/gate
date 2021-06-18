@@ -1,0 +1,121 @@
+a:hover{
+  color: #8fff2f;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+}
+
+#top-space-holder{
+  height: 64px;
+}
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+AppBar{
+  position: fixed;
+  top: 0px;
+}
+
+#id-sidebarcontainer{
+  z-index: 2100;
+}
+
+#catalog-container,
+.catalogItemAnchor{
+  color: #fffffc;
+}
+
+#catalog-container{
+  /* min-width: 10vw; */
+  height: 100%;
+  background-color: rgba(0,0,0,0.96);
+}
+
+#catalog-title{
+  position: relative;
+  height: 10vh;
+  font-size: larger;
+}
+
+.catalog-ul,
+.catalog-ul li{
+  padding-left: 0.5em;
+}
+
+.center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#sidebar-with-space-holder{
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow: auto;
+}
+
+#sidebar-space-holder {
+  height: 94px;
+}
+
+.sidebar-disappear-final,
+.sidebar-appear,
+.sidebar-disappear{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-disappear-final{
+  left: -100%;
+}
+
+.sidebar-appear{
+  left: 0;
+  animation: sidebarappearanimation 0.5s;
+}
+
+@keyframes sidebarappearanimation {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.sidebar-disappear{
+  left: 0;
+  animation: sidebardisappearanimation 0.5s;
+}
+
+@keyframes sidebardisappearanimation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#mask-full{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}

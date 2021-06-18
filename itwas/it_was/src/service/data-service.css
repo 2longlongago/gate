@@ -1,0 +1,44 @@
+.level-1,
+.level-3,
+.level-5 {
+    text-align: center;
+}
+
+.level-2 {
+    font-size: 1.5em;
+}
+
+.level-1 {
+    font-size: 2em;
+}
+
+.level-3 {
+    font-size: 1.35em;
+}
+
+.level-5,
+.level-7 {
+    font-size: 1.18em;
+}
+
+
+/* .level-2, .level-4, .level-6, .level-8{
+    color: rgb(255, 220, 255);
+} */
+
+.level-4,
+.level-6,
+.level-8 {
+    font-size: 1.1em;
+}
+
+.level-1,
+.level-2,
+.level-3,
+.level-4,
+.level-5,
+.level-6,
+.level-7,
+.level-8 {
+    text-shadow: 5px 3px 3px rgb(32, 255, 0);
+}

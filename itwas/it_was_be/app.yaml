@@ -1,0 +1,12 @@
+runtime: go115
+
+runtime_config:
+    # document_root: .
+    nginx_conf_include: nginx_app.conf
+
+# service: default
+# version: v2
+# threadsafe: true
+# handlers:
+#   - url: /.*
+#     script: say-ago.application
